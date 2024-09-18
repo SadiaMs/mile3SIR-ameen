@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☀️ Dynamic Resume By Sadia ☀️</title>
+    <link rel="stylesheet" href="sctyle.css">
+</head>
+<body>
+    <h1> ☀️ Dynamic Resume builder  ☀️ </h1>
+    <h2>SADIA</h2>
+ 
+    <form id="resume-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <!---profile picture-->
+            <label for="image">Upload Profile Image:</label>
+            <input type="file" id="profile-image" name="profile-image" accept="image/*" required>
+            <br>
+            <label for="name">Name:</label>
+            <input type="text" id="name"placeholder="Enter your Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your Email" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="Enter your Phone Number" required>
+            
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education:</label>
+            <input type="text" id="education" placeholder=" Enter yourEducation" row="4" required>
+           
+
+        </fieldset>
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience:</label>
+            <textarea id="experience" placeholder="Enter your Work Experience" rows="4" required></textarea>
+
+        </fieldset>
+        <fieldset>
+            <legend>Address:</legend>
+            <label for="address"></label>
+            <textarea id="address" placeholder="Enter your Address" rows="4" required></textarea>
+        </fieldset>
+        <fieldset>
+        <legend>Skills</legend>
+        <label for="skills">Skills:</label>
+        <textarea id="skills" placeholder="Enter your Skills" rows="4" required></textarea>
+        </fieldset>
+        <button type="submit"><b>Resume Generate</b></button>
+
+        
+    </form>
+<br>
+<!--dynamic resume-->
+<div id="resume-display">
+<!---resume will be generated bellow-->
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
